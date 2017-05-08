@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Media</title>
+    <style>
+        .container{
+            width: 1200px;
+            margin: auto;
+        }
+        .audio{
+            float: left;
+            width: 48%;
+            padding: 10px;
+            background: #ccc;
+            height: 800px;
+        }
+        .video{
+            float: right;
+            width: 48%;
+            padding: 10px;
+            background: #ccc;
+            height: 800px;
+        }
+        .audio h3,
+        .video h3{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="audio">
+            <!--url location-->
+            <h2>Audio Tag</h2>
+            <h3>Use Url Location</h3>
+            <audio controls>
+                <source src="uploads/Nam-Lay-Tay-Anh_Tuan-Hung.mp3" type="audio/mpeg">
+            </audio>
+            <!--url remote-->
+            <h3>Use Url Remote</h3>
+            <audio controls autoplay="autoplay" loop="loop">
+                <source src="http://static-mp3.nhac.vui.vn/e935e59e80453e182ed2ec27bdde35771494225272/uploadmusic/id_le/2014-2/ChipCoi/320/VietNam/Hot/2/4-2014/128/Nam Lay Tay Anh - Tuan Hung.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="video">
+            <h2>Video Tag</h2>
+            <h3>Use Url Location</h3>
+            <video width="400" height="300" autoplay="autoplay" controls>
+                <source src="uploads/shape-of-you.mp4" type="video/mp4">
+            </video>
+            <h3>Use Url Remote</h3>
+            <video width="400" height="300" preload="auto" poster="images/alone.jpg" controls>
+                <source src="http://zmp3-mp3-mv1-tr.zadn.vn/893b695c5719be47e708/6080501357591462862?key=uEKZClCN6bC8X6lY9AmI7w&expires=1494238092" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</body>
+</html>
